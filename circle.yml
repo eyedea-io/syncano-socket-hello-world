@@ -31,7 +31,7 @@ deployment:
     commands:
       - yarn:
           pwd: syncano
-      - syncano-cli submit ${SOCKET_NAME} -b patch
+      - syncano-cli socket submit ${SOCKET_NAME} -b patch
 
   production:
     branch: master
