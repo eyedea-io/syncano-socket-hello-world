@@ -29,9 +29,7 @@ deployment:
   staging:
     branch: devel
     commands:
-      - yarn:
-          pwd: syncano
-      - syncano-cli socket submit ${SOCKET_NAME} -b patch
+      - syncano-cli socket submit hello -b patch
 
   production:
     branch: master
