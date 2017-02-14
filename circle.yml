@@ -30,6 +30,7 @@ deployment:
     branch: devel
     commands:
       - syncano-cli socket submit hello -b patch
+      - git config --global user.email $GITHUB_EMAIL && git config --global user.name $GITHUB_NAME"
       - git commit -a -m \"Bumping version [ci skip]\" && git push origin $CIRCLE_BRANCH
 
   production:
