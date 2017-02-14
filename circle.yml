@@ -15,11 +15,7 @@ dependencies:
         echo "The correct version of Yarn is already installed."
       fi
   override:
-    - yarn global add syncano-cli@beta --force
-  cache_directories:
-    - ~/.yarn
-    - ~/.config/yarn
-    - ~/.cache/yarn
+    - yarn global add syncano-cli@beta
 
 test:
   override:
